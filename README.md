@@ -15,10 +15,14 @@
 - Wanted to make dictionary with dates from 1/1/2020 to 9/1/2020 returning values of number of cases and permit for each day
 
 ### Results
+
 ![2020 NYC Film Permits Issued](Images/filmpermits.png)
 * From 1/1/2020 NYC issued on average approximately 19 film permits per day. No day had less than 1 permit issued until 3/14/2020 where 0 permits were issued. On 3/20/2020 the Mayor's Office of Film, Theatre & Broadcasting stopped issuing permits out until 7/23/2020. No more than 2 permits have been issued since.
+
 ![2020 NYC COVID-19 Cases](Images/covid19cases.png)
 * No cases were reported until 2/29/2020. On 3/14/2020, the date when the permit office had the first day in 2020 that they did not issue a single permit, COVID-19 cases doubled the previous high total. On 7/23/2020, the first permit in 4 months was issued on one of the lowest total number of cases since the inception of the virus.
+
 ![NYC Film Permits Issued vs COVID-19 Cases](Images/626project.png)
-* Graph shows the relationship between the number of film permits issued and number of COVID-19 cases. As the amount of virus cases rise the number of permits issued by NYC declined.
+* Graph shows the relationship between the number of film permits issued and number of COVID-19 cases. As the amount of virus cases rise the number of permits issued by NYC declined. It appears to be an inverse relationship.
+
 ### Summary
