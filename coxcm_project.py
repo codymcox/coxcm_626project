@@ -1,6 +1,6 @@
 import csv, datetime
 
-# creating subset of number of covid cases per date 
+# creating subset of number of covid cases per date
 with open('COVID-19_Daily_Counts_of_Cases__Hospitalizations__and_Deaths.csv') as f:
     data = [{k: str(v) for k, v in row.items()}
         for row in csv.DictReader(f, skipinitialspace=True)]
@@ -92,3 +92,24 @@ for row in reader:
 for row in reader1:
     writer.writerow(row)
 f.close()
+
+# Tried to create list of dates for dictionary. Issues making it into a list
+'''date1 = '2020-01-01'
+date2 = '2020-09-01'
+start = datetime.datetime.strptime(date1, '%Y-%m-%d')
+end = datetime.datetime.strptime(date2, '%Y-%m-%d')
+step = datetime.timedelta(days=1)
+while start <= end:
+    #print(start.date())
+    start += step
+# printing out cases and permits but needed dates as key values 
+with open('626project.csv') as f:
+    data = [{k: str(v) for k, v in row.items()}
+        for row in csv.DictReader(f, skipinitialspace=True)]
+cases = {}
+for row in data:
+    datetime_str = row['covid_datetime']
+    #obj_date = datetime.datetime.strptime((datetime_str),'%m/%d/%y')
+    #nds = datetime.datetime.strftime(obj_date,'%Y-%m-%d')
+    cases[row['covid_datetime']] = row['casecount']'''
+#print(cases)
